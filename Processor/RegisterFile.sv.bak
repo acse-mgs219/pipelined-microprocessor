@@ -1,0 +1,30 @@
+module RegisterFile(input logic RR1[2:0],
+                    input logic RR2[2:0],
+						  input logic WR[2:0],
+						  input logic WD[7:0],
+						  input logic RegWr, clock, reset,
+						  output logic RD1[7:0],
+						  output logic RD2[7:0]);
+
+integer i;
+reg [7:0] outputRegister [7:0];
+						  
+always_ff@(posedge clock)
+begin
+
+	if(reset)
+	
+	begin
+	for(i=0;i<7;i=i+1)
+		outputRegister[i] <=0;
+		
+	end
+	
+	else if (RegWr)
+	
+	begin
+	outputRegister[WR] <= WD;
+	end
+	
+end
+

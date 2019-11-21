@@ -1,0 +1,9 @@
+module AddressExtensionUnit(input [7:0] InstAddress
+								 output [7:0] ByteAddress);
+										  
+
+always_comb
+ByteAddress = {InstAddress[4..0], 3'b000};
+end
+
+endmodule

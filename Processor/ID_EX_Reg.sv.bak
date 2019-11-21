@@ -1,0 +1,34 @@
+module ID_EX_Reg (input logic Ain[7:0],
+	          input logic Bin[7:0],
+	          input logic rd_in[2:0],
+	          input logic rt_in[2:0],
+	          input logic imm8_in[7:0],
+		  input logic jaddr_in[7:0],
+
+  	          output logic Aout[7:0]
+	          output logic Bout[7:0]
+	          output logic imm8_out[7:0]
+	          output logic rd_out[2:0]
+	          output logic rt_out[2:0]
+	          output logic jaddr_out[7:0]);
+
+logic d = {Ain,Bin,rd_in,rt_in,imm8_in,jaddr};
+logic q;
+
+always_ff@(posedge clk)
+begin
+q <= d;
+end
+
+always_comb
+begin
+
+Aout = q[37:30];
+Bout = q[29:22];
+rd_out = q[21:19];
+rt_out = q[18:16];
+imm8_out = q[15:8];
+jaddr_out = q[7:0];
+
+end
+endmodule

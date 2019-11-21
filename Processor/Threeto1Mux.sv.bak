@@ -1,0 +1,16 @@
+module Threeto1Mux(input logic a[2:0],
+               input logic b[2:0],
+					input logic c[2:0],
+	       input logic sel[1:0],
+	       output logic out[2:0]);
+						 
+always_comb
+if (sel == 2'b00)
+ out = a;
+else if (sel == 2'b01)
+ out = b;
+else if (sel == 2'b10)
+ out = c;
+
+	
+endmodule

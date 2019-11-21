@@ -1,0 +1,25 @@
+module EX_MEM_Reg (input logic [7:0] ALUin,
+                   input logic [7:0] rt,
+                   input logic [7:0] rt_or_rd,
+             input clk,
+  	          output logic [7:0] ALU_out,
+				 output logic [7:0] rt_out,
+				 output logic [7:0] rt_or_rd_out);
+
+logic d = {ALUin[7:0], rt[7:0], rt_or_rd[7:0]};
+logic q[23:0];
+
+always_ff@(posedge clk)
+begin
+q <= d;
+end
+
+always_comb
+begin
+
+ALU_out = q[23:16];
+rt_out = q[15:8];
+rt_or_rd_out = q[7:0];
+
+end
+endmodule

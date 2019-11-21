@@ -1,0 +1,281 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ALURead[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ALURead[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ALURead[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ALURead[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ALURead[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALURead[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALURead[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALURead[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DataMemRead[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DataMemRead[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DataMemRead[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DataMemRead[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DataMemRead[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DataMemRead[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DataMemRead[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DataMemRead[0]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionRead[15]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionRead[14]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionRead[12]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionRead[11]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionRead[10]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionRead[9]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionRead[8]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionRead[7]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionRead[6]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionRead[5]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionRead[3]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionRead[2]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionRead[1]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionRead[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OPCodeRead[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OPCodeRead[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OPCodeRead[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OPCodeRead[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PCreading[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PCreading[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PCreading[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PCreading[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PCreading[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PCreading[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PCreading[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCreading[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RSReading[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RSReading[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RSReading[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RSReading[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RSReading[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RSReading[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RSReading[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RSReading[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RTreading[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RTreading[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RTreading[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RTreading[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RTreading[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RTreading[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RTreading[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RTreading[0]",
+					"strict" : false
+				},
+				{
+					"name" : "WBRead[7]",
+					"strict" : false
+				},
+				{
+					"name" : "WBRead[6]",
+					"strict" : false
+				},
+				{
+					"name" : "WBRead[5]",
+					"strict" : false
+				},
+				{
+					"name" : "WBRead[4]",
+					"strict" : false
+				},
+				{
+					"name" : "WBRead[3]",
+					"strict" : false
+				},
+				{
+					"name" : "WBRead[2]",
+					"strict" : false
+				},
+				{
+					"name" : "WBRead[1]",
+					"strict" : false
+				},
+				{
+					"name" : "WBRead[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "startTheProgram",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

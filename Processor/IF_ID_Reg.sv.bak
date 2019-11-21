@@ -1,0 +1,32 @@
+module IF_ID_Reg (input logic Instruction[15:0],
+	          input logic PCp1in[7:0],
+
+  	          output logic opcode[4:0],
+	          output logic PCp1out[7:0],
+	          output logic rs[2:0],
+	          output logic rt[2:0],
+	          output logic rd[2:0],
+	          output logic jaddr[7:0],
+	          output logic imm5[4:0]);
+
+logic d = {Instruction, PCp1in};
+logic q;
+
+always_ff@(posedge clk)
+begin
+q <= d;
+end
+
+always_comb
+begin
+
+opcode = q[23:19];
+rs = q[18:16];
+rt = q[15:13];
+rd = q[12:10];
+imm5 = q[12:8];
+jaddr = q[15:8];
+PCp1out = q[7:0];
+
+end
+endmodule

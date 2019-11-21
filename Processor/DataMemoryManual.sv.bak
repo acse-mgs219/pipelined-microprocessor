@@ -1,0 +1,29 @@
+module DataMemoryManual(input logic [7:0]address,
+						  input logic [7:0]data,
+						  input clk,
+						  input logic Wren,
+						  output logic [7:0]q);
+
+integer i;
+reg [7:0] outputRegister[7:0];
+						  
+always_ff@(posedge clk)
+begin
+
+
+	if (RegWr)
+	
+	begin
+	outputRegister[WR] <= WD;
+	end
+	
+end
+
+always_comb
+begin
+RD1 = outputRegister[RR1];
+RD2 = outputRegister[RR2];
+end
+
+endmodule
+

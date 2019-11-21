@@ -1,0 +1,11 @@
+module 2to1Mux(input [2:0]a,b,
+	       input sel,
+	       output [2:0]out);
+						 
+always_comb
+if (sel)
+ out = b;
+else 
+ out = a;
+	
+endmodule

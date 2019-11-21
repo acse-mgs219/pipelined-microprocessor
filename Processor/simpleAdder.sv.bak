@@ -1,0 +1,6 @@
+module simpleAdder(input logic [7:0] A,
+                   input clk,
+                   output logic [7:0] PCplus1);
+						 
+always_ff @ (posedge clk)
+PCplus1 <= A + 1;
